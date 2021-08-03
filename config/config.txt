@@ -1,0 +1,5 @@
+[splunk]
+host=splunk.com
+port=8089
+username=demouser
+

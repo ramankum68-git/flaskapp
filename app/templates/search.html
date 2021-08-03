@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<body>
+<div style="margin-left:25%;padding:1px 16px;height:1000px;"> 
+<div class="w3-container w3-teal">
+  <h1> Digital Sustaining Operations </h1>
+</div>
+
+
+<form action="/search" method=post style="max-width:500px;margin:auto">
+  <h2>Okta  Search </h2>
+
+
+  <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field" type="text" placeholder="Email" name="email">
+  </div>
+
+
+
+
+  <button type="submit" class="btn">Search </button>
+</form>
+</div>
+</body>
+{% endblock %}

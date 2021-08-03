@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<body>
+<ul>
+  <li><a class="active" href="/">Home</a></li>
+  <li><a href="/mypolicy_failures">My Policy User Failures </a></li>
+  <li><a href="/search">Okta Search </a></li>
+  <li><a href="/mdm_search">MDM Search </a></li>
+</ul>
+<div style="margin-left:25%;padding:1px 16px;height:1000px;"> 
+<div class="w3-container w3-teal">
+  <h1> Digital Sustaining Operations </h1>
+</div>
+
+
+<form action="/mdm_search" method=post style="max-width:500px;margin:auto">
+  <h2>MDM  Search </h2>
+
+
+
+ <div class="input-container">
+    <i class="fa fa-credit-card icon"></i>
+    <input class="input-field" type="text" placeholder=" Number " name="param_value">
+  </div>
+  <div class="input-container">
+  <select id="param_type" name="param_type">
+        <option value="policy">Policy Number </option>
+        <option value="dl">Driver License No. </option>
+      </select>
+   </div>
+
+
+  <button type="submit" class="btn">Search </button>
+</form>
+</div>
+</body>
+{% endblock %}
